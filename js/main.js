@@ -41,18 +41,7 @@
     document.body.classList.add('opened');
     window.scrollTo(0, 0);
  
-    function initReveal() {
-    const items = $$('.reveal');
-    const revealObserver = new IntersectionObserver((entries, obs) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
-    items.forEach(el => revealObserver.observe(el));
-  }
+    initReveal();
  
     const hero = $('#hero');
     hero.setAttribute('tabindex', '-1');
@@ -365,7 +354,7 @@
  
   function initReveal() {
     const items = $$('.reveal');
-    revealObserver = new IntersectionObserver((entries, obs) => {
+    const revealObserver = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in-view');
