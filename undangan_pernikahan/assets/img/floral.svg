@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 400">
+  <defs>
+    <path id="leaf" d="M0 0C14-20 46-20 60 0C46 20 14 20 0 0Z"/>
+    <g id="bloom">
+      <g fill="#f4e4da">
+        <ellipse cx="0" cy="-13" rx="7.5" ry="13"/>
+        <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-13" rx="7.5" ry="13" transform="rotate(288)"/>
+      </g>
+      <circle r="5.5" fill="#b8924a"/>
+    </g>
+  </defs>
+  <path d="M-10 410C60 300 120 250 190 190S330 80 410-10" fill="none" stroke="#b8924a" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#7f9a82">
+    <use href="#leaf" xlink:href="#leaf" transform="translate(40 338) rotate(-100)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(58 322) rotate(-12)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(98 280) rotate(-105)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(118 262) rotate(-20)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(205 178) rotate(-95)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(222 166) rotate(-10)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(262 120) rotate(-100)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(280 108) rotate(-14)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(340 56) rotate(-98)"/>
+  </g>
+  <g fill="#2c5142" opacity=".85">
+    <use href="#leaf" xlink:href="#leaf" transform="translate(150 224) rotate(-110) scale(.8)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(168 212) rotate(-8) scale(.8)"/>
+    <use href="#leaf" xlink:href="#leaf" transform="translate(310 84) rotate(-108) scale(.8)"/>
+  </g>
+  <use href="#bloom" xlink:href="#bloom" transform="translate(150 250) scale(1.6)"/>
+  <use href="#bloom" xlink:href="#bloom" transform="translate(234 168) scale(2)"/>
+  <use href="#bloom" xlink:href="#bloom" transform="translate(318 88) scale(1.5)"/>
+  <use href="#bloom" xlink:href="#bloom" transform="translate(84 304) scale(1.1)"/>
+  <circle cx="52" cy="352" r="5" fill="#e8d6ae"/>
+  <circle cx="370" cy="40" r="5" fill="#e8d6ae"/>
+  <circle cx="198" cy="130" r="4" fill="#e8d6ae"/>
+</svg>
